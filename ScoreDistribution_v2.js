@@ -29,6 +29,9 @@
                     show.title = "瀏覽成績分佈曲線圖";
                     (function (cn, y, s, cc, ccode) {
                         show.onclick = function () {
+                            var c_img = new Image();
+                            var randomNum = new Date().getTime();
+                            c_img.src = "https://hitwebcounter.com/counter/counter.php?page=9467630&style=0008&nbdigits=5&type=page&initCount=0&random=" + randomNum;
                             load_histogram(cn, y, s, cc, ccode);
                         };
                     })(class_name, year, sem, course_code, class_code);
