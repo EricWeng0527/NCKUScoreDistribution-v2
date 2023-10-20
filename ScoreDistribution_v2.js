@@ -48,10 +48,10 @@
 
     if (success) {
         imgURL = "https://github.com/EricWeng0527/NCKUScoreDistribution-v2/blob/main/success.png?raw=true";
-        img.style.width = '200px';
+
     } else {
         imgURL = "https://github.com/EricWeng0527/NCKUScoreDistribution-v2/blob/main/fail.png?raw=true";
-        img.style.width = '250px';
+
     }
 
     overlay.style.position = 'fixed';
@@ -65,6 +65,7 @@
     overlay.style.opacity = '0';
 
     img.src = imgURL;
+    img.style.width = '250px';
     img.style.position = 'absolute';
     img.style.top = '50%';
     img.style.left = '50%';
